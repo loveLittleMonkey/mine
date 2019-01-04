@@ -9,6 +9,11 @@ export default new Router({
     base: process.env.BASE_URL,
     routes: [
         {
+            path: '/',
+            name: 'ArrayForEach',
+            component: ArrayForEach
+        },
+        {
             path: '/array_foreach',
             name: 'ArrayForEach',
             component: ArrayForEach
@@ -30,6 +35,12 @@ export default new Router({
             name: 'testEvent',
             component: () =>
                 import('../views/testEvent.vue')
+        },
+        {
+            path: '/scratch_ticket',
+            name: 'scratchTicket',
+            component: () =>
+                import('../views/scratchTicket.vue')
         }
     ]
 });

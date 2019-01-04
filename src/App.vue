@@ -5,6 +5,7 @@
         <router-link :to="{name: 'ArrayFunction'}">ArrayFunction</router-link> |
         <router-link :to="{name: 'AsyncAwait'}">AsyncAwait</router-link> |
         <router-link :to="{name: 'testEvent'}">testEvent</router-link> |
+        <router-link :to="{name: 'scratchTicket'}">scratchTicket</router-link> |
     </div>
     <router-view/>
   </div>
