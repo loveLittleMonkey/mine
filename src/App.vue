@@ -1,14 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <div id="nav">
+        <router-link :to="{name: 'ArrayForEach'}">ForEach</router-link> |
+        <router-link :to="{name: 'ArrayFunction'}">ArrayFunction</router-link> |
+        <router-link :to="{name: 'AsyncAwait'}">AsyncAwait</router-link> |
+    </div>
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
-}
+    name: 'App'
+};
 </script>
 
 <style>
@@ -19,5 +23,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#nav {
+    padding: 30px;
+}
+#nav > a {
+    font-weight: bold;
+    color: #2c3e50;
+}
+#nav > a,.router-link-exact-active {
+    color: #42b983;
 }
 </style>
