@@ -24,6 +24,12 @@ export default new Router({
             name: 'AsyncAwait',
             component: () =>
                 import('../views/AsyncAwait.vue')
+        },
+        {
+            path: '/test_event',
+            name: 'testEvent',
+            component: () =>
+                import('../views/testEvent.vue')
         }
     ]
 });

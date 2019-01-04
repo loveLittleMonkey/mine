@@ -4,6 +4,7 @@
         <router-link :to="{name: 'ArrayForEach'}">ForEach</router-link> |
         <router-link :to="{name: 'ArrayFunction'}">ArrayFunction</router-link> |
         <router-link :to="{name: 'AsyncAwait'}">AsyncAwait</router-link> |
+        <router-link :to="{name: 'testEvent'}">testEvent</router-link> |
     </div>
     <router-view/>
   </div>
