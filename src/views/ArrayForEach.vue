@@ -34,7 +34,9 @@
 Array.prototype.remove = function(obj) {
 
 }
+import mixin from './mixin';
 export default {
+    mixins: [mixin],
     name: 'ArrayForEach',
     data() {
         return {

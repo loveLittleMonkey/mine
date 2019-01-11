@@ -18,7 +18,9 @@
 
 <script>
 /* eslint-disable */
+import mixin from './mixin';
 export default {
+    mixins: [mixin],
     mounted() {
       /*
         在div4上触发点击事件

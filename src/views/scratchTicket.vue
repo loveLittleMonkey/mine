@@ -46,6 +46,7 @@
 /* eslint-disable */
     let data;
     let total;
+    import { setFontSize } from './font-size'
     export default {
         data() {
             return {
@@ -65,6 +66,10 @@
         },
 
         mounted() {
+            // 如果我只需要本router view的
+
+            setFontSize()
+
             console.log('111',this.$refs.img)
             this.globalCanvas = this.$refs.myCanvas;
             this.globalCtx = this.globalCanvas.getContext('2d');

@@ -47,7 +47,9 @@
 
 <script>
 /* eslint-disable */
+import mixin from './mixin';
 export default {
+    mixins: [mixin],
     name: 'AsyncAwait',
     methods: {
         api1() {

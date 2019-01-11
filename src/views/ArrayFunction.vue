@@ -54,7 +54,9 @@
 </template>
 <script>
 /* eslint-disable */
+import mixin from './mixin';
 export default {
+    mixins: [mixin],
     name: 'ArrayFunction',
     data() {
         return {
